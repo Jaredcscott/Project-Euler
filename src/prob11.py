@@ -31,27 +31,29 @@ count = 0
 #        if curProduct > maxProduct:
 #            maxProduct = curProduct
 
-#for xI in range(len(grid)):
-#    for yI in range(len(grid)-3):
-#        curProduct = grid[yI][xI] * grid[yI+1][xI] * grid[yI+2][xI] * grid[yI+3][xI]
-        #print("Product: " + str(curProduct) + " " + str(grid[yI][xI]) + " " + str(grid[yI+1][xI]) + " " + str(grid[yI+2][xI]) + " " + str(grid[yI+3][xI]))
-#        if curProduct > maxProduct:
-#            maxProduct = curProduct
-
-#for xI in range(len(grid)-3):
-#    for yI in range(len(grid)-3):
-#        curProduct = grid[yI][xI] * grid[yI+1][xI+1] * grid[yI+2][xI+2] * grid[yI+3][xI+3]
-#        print("Product: " + str(curProduct) + " " + str(grid[yI][xI]) + " " + str(grid[yI+1][xI+1]) + " " + str(grid[yI+2][xI+2]) + " " + str(grid[yI+3][xI+3]))
-#        if curProduct > maxProduct:
-#            maxProduct = curProduct
+for xI in range(len(grid)):
+    for yI in range(len(grid)-3):
+        curProduct = grid[yI][xI] * grid[yI+1][xI] * grid[yI+2][xI] * grid[yI+3][xI]
+        print("Product: " + str(curProduct) + " " + str(grid[yI][xI]) + " " + str(grid[yI+1][xI]) + " " + str(grid[yI+2][xI]) + " " + str(grid[yI+3][xI]))
+        if curProduct > maxProduct:
+            maxProduct = curProduct
+print("-------------------------------------------------------------------------------------Max Product: " + str(maxProduct))
 for xI in range(len(grid)-3):
     for yI in range(len(grid)-3):
         curProduct = grid[yI][xI] * grid[yI+1][xI+1] * grid[yI+2][xI+2] * grid[yI+3][xI+3]
         print("Product: " + str(curProduct) + " " + str(grid[yI][xI]) + " " + str(grid[yI+1][xI+1]) + " " + str(grid[yI+2][xI+2]) + " " + str(grid[yI+3][xI+3]))
         if curProduct > maxProduct:
             maxProduct = curProduct
+print("-------------------------------------------------------------------------------------Max Product: " + str(maxProduct))
+for xI in range(3,len(grid)):
+    for yI in range(len(grid)-3):
+        curProduct = grid[yI][xI] * grid[yI+1][xI-1] * grid[yI+2][xI-2] * grid[yI+3][xI-3]
+        print("Product: " + str(curProduct) + " " + str(grid[yI][xI]) + " " + str(grid[yI+1][xI-1]) + " " + str(grid[yI+2][xI-2]) + " " + str(grid[yI+3][xI-3]))
+        if curProduct > maxProduct:
+            maxProduct = curProduct
 
-print(maxProduct)
+print("-------------------------------------------------------------------------------------Max Product: " + str(maxProduct))
+
 
 '''
     curProduct = 1
