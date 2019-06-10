@@ -41,6 +41,7 @@ totalSum = 0
 #        print("incorrect")
 #        break
 
+
 for i in range(len(abundantNums)):
     for j in range(len(abundantNums)):
         if abundantNums[i] + abundantNums[j] <= 28123:
@@ -48,7 +49,10 @@ for i in range(len(abundantNums)):
             canSum[abundantNums[i] + abundantNums[j]] = True 
         else:
             break
+            
+            
 #print(len(canSum))
+           
            
 for i in range(len(canSum)):
     if not canSum[i]:
