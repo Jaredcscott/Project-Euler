@@ -5,7 +5,7 @@ for y in range(len(grid)):
         print(grid[y][x])
 
 
-#for i in grid:
-#    print(i)
+for i in grid:
+    print(i)
 
 #print(start)
