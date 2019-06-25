@@ -11,7 +11,7 @@
 
 masterNums = [x for x in range(1,500)]
 curRow = []
-gridSize = 15
+gridSize = 25
 grid = []
 for i in range(gridSize):
     if i == 0:
@@ -26,8 +26,8 @@ for i in range(gridSize):
 ####FOR EASE OF READING####
 for row in grid:
     for num in row:
-        numString = "{:3}".format(num)
-        row[row.index(num)] = numString.strip("'")
+        numString = "{:2}".format(num)
+        row[row.index(num)] = numString
     
     print(row)
 ###########################    
