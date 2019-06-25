@@ -1,11 +1,4 @@
-#grid = [['a','b','c'],['d','e','f'],['g','h','i']]
-#start = grid[0][0]
-#for y in range(len(grid)):
-#    for x in range(len(grid[0])):
-#        print(grid[y][x])
-#for i in grid:
-#    print(i)
-#print(start)
+#####SOLUTION#####
 #gridSize = 20 
 #numOfPaths = 1
 #for i in range(gridSize):
@@ -13,22 +6,41 @@
 #    numOfPaths /= i + 1
 #    
 #print(numOfPaths)
-masterNums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+##################
+
+
+masterNums = [x for x in range(1,500)]
 curRow = []
-row = 0
-gridSize = 5
+gridSize = 15
 grid = []
 for i in range(gridSize):
-    #grid.append([])
     if i == 0:
         curRow.append(0)
-        for j in range(gridSize - 1):
+        for j in range(1,gridSize):
             curRow.append(j)
+        grid.append(curRow.copy())
+        curRow.clear()
     else:    
-        curRow.append(masterNums[row + i:(row + i) + 6])
-    print(curRow)
-    grid.append(curRow)
-    curRow.clear()
-
+        grid.append(masterNums[i - 1:(i - 1) + gridSize])
+    
+####FOR EASE OF READING####
 for row in grid:
+    for num in row:
+        numString = "{:3}".format(num)
+        row[row.index(num)] = numString.strip("'")
+    
     print(row)
+###########################    
+
+    
+####PRODUCT OF MAIN DIAGONAL?########    
+#product = 1
+#for i in range(gridSize):
+#    print(product)
+#    product *= int(grid[i][i])
+#    print(product)
+#
+#print("Final: " + str(product))
+#####################################
+    
+    
