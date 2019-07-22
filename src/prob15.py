@@ -11,7 +11,7 @@
 
 masterNums = [x for x in range(1,500)]
 curRow = []
-gridSize = 25
+gridSize = 21
 grid = []
 for i in range(gridSize):
     if i == 0:
@@ -22,6 +22,11 @@ for i in range(gridSize):
         curRow.clear()
     else:    
         grid.append(masterNums[i - 1:(i - 1) + gridSize])
+
+startx = 0
+starty = 0
+
+
     
 ####FOR EASE OF READING####
 for row in grid:
