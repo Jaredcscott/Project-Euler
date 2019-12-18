@@ -45,8 +45,22 @@ public class prob38 {
             sb.append("" + prod);
         }
         
-        System.out.println(sb.toString());
-        System.out.println(isPandigital(Long.parseLong(sb.toString())));
+        for (int i = 1; i < 10 ; i++) {
+            for (int j = 1; j < 1000 ; j++) {
+                int prod = i * j;
+                String numS = "" + prod;
+                sb.append(numS);
+                if (sb.length() > 9) {
+                    break;
+                }
+            }
+            System.out.println(sb.toString());
+            System.out.println(Long.parseLong(sb.toString()));
+            sb.delete(0, sb.length()-1);
+        }
+        
+        
+        
     }
     
 }
