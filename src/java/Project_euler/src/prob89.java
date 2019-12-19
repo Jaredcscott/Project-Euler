@@ -1,5 +1,5 @@
-
-import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /*
@@ -35,9 +35,10 @@ public class prob89 {
     }
         
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         String attempt = "IIIX";
-        Scanner in = new Scanner("prob89.txt");
+        File file = new File("src/prob89.txt");
+        Scanner in = new Scanner(file);
         while (in.hasNextLine()) {
             System.out.println(in.nextLine());
         }
