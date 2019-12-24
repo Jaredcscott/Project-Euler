@@ -23,9 +23,7 @@ public class prob144 extends Application {
     
     public void start(Stage primaryStage) {
         Pane pane = new Pane();
-        System.out.println("Here");
         ArrayList<Point> toPlot = getPoints(-5.2,5.2,-10.1,10.1);
-        System.out.println("Here3");
         for (Point point : toPlot) {
             pane.getChildren().add(new Circle(point.x,point.y,1));
         }
@@ -47,21 +45,21 @@ public class prob144 extends Application {
     
     public static ArrayList<Point> getPoints(double minX, double maxX, double minY, double maxY) {
         ArrayList<Point> points = new ArrayList<Point>();
-        System.out.println("Here2");
         for(double x = minX; x <= maxX; x += .001) {
             x = Math.round(x * 1000.0) / 1000.0;
             for ( double y = minY; y <= maxY ; y += .001) {
                 y = Math.round(y * 1000.0) / 1000.0;
                 //System.out.println("X: " + x + " Y: " + y);
                 if ( ((4 *(Math.pow(x, 2))) + (Math.pow(y,2)))  == 100) {
-                    Point newPoint = new Point(x*10, y*10);
+                    System.out.println("X: " + x + " Y: " + y);
+                    Point newPoint = new Point((x*10) + 150, (y*10) + 150);
                     points.add(newPoint);
                 }
                 
             }
             
         }
-        System.out.println(points.size());
+        //System.out.println(points.size());
         return points;
     }
     
