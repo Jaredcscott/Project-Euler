@@ -16,23 +16,4 @@ while len(ordersList) < 1:
     
                 
   
-    #if curNum not in ordersList:
-    #    ordersList.append(curNum)
-    #print(curNum)
-#for a in range(3):
-#    for b in range(3):
-#        for c in range(3):
-#            curNum = ''
-#            if str(a) not in curNum:
-#                curNum += str(a)
-#            if str(b) not in curNum:
-#                curNum += str(b)
-#            if str(c) not in curNum:
-#                curNum += str(c)  
-#            print(curNum)
-#            if len(curNum) == 3 and curNum not in ordersList:
-#                ordersList.append(curNum)                
-#                
-#            
-#ordersList.sort()
 print(ordersList)

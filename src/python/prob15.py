@@ -1,14 +1,3 @@
-#####SOLUTION#####
-#gridSize = 20 
-#numOfPaths = 1
-#for i in range(gridSize):
-#    numOfPaths *= (2 * gridSize) - i
-#    numOfPaths /= i + 1
-#    
-#print(numOfPaths)
-##################
-
-
 masterNums = [x for x in range(1,500)]
 curRow = []
 gridSize = 21
@@ -27,25 +16,14 @@ startx = 0
 starty = 0
 
 
-    
-####FOR EASE OF READING####
 for row in grid:
     for num in row:
         numString = "{:2}".format(num)
         row[row.index(num)] = numString
     
     print(row)
-###########################    
+  
 
     
-####PRODUCT OF MAIN DIAGONAL?########    
-#product = 1
-#for i in range(gridSize):
-#    print(product)
-#    product *= int(grid[i][i])
-#    print(product)
-#
-#print("Final: " + str(product))
-#####################################
-    
+
     

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def even(num):
     return num/2
     
@@ -26,7 +25,6 @@ while num < 1000000:
         longestChain = num
 
 print(longestChain)
-=======
 largestSeq = 0
 ansNum = 0
 num = 1
@@ -49,6 +47,3 @@ while num < 1000000:
     num += 1
 
 print(ansNum, largestSeq)
-
-
->>>>>>> bf6bea2de390ad3ccfe4b0ebc22c268bf7413971
