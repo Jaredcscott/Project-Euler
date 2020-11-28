@@ -7,18 +7,6 @@ def print_factors(x):
            factors.append(i)
     return factors
 sum = 0
-#for i in range(1,10):
-#    curfactors = print_factors(i)
-#    for j in curfactors:
-#        if j * j == i:
-#            continue
-#        else:
-#                sum += j
-
-#print(sum)
-
-
-
 
 def sumFactors(factors, num):
     sum = 0
@@ -29,22 +17,6 @@ def sumFactors(factors, num):
             sum += j
     return sum
           
-#for i in range(285):
-#    curFactors = print_factors(i)
-#    print(sumFactors(curFactors, i),' ', i)
-    
-    #otherNum = sumFactors(curfactors)
-    #otherFactors = print_factors(otherNum)
-    #otherSum = sumFactors(otherNum)
-    #if sumFactors(curfactors) ==  otherSum:
-    #    print('amicable', sumFactors(curfactors), otherSum) 
-        
-#curFactors = print_factors(284)
-#print(sumFactors(curFactors, 284),' ', 284) # 220 284 
-#curFactors1 = print_factors(220)
-#print(sumFactors(curFactors1, 220), ' ', 220) # 284 220
-#if sumFactors(curFactors1, 220) == 284 and sumFactors(curFactors, 284) == 220:
-#            print("here")
 sum = 0
 for i in range(1,10001):
     curFactors = print_factors(i)

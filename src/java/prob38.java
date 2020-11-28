@@ -1,11 +1,4 @@
-
 import java.util.ArrayList;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -46,13 +39,6 @@ public class prob38 {
         boolean breakBool = false;
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i < 10000 ; i++) {
-//            if (i == 9) {
-//                nine = true;
-//                System.out.println("----------------");
-//            }
-//            else {
-//                nine = false;
-//            }
             for (int j = 1; j <= 100 ; j++) {
                 for (int k = 1; k <= j; k++) {
                     int prod = i * k;
@@ -89,12 +75,7 @@ public class prob38 {
                 }
             }
             breakBool = false;
-//            if(nine) {
-//                System.out.println("----------------");
-//            }
-            
         }
         System.out.println(maxNum);
-    }
-    
+    }   
 }

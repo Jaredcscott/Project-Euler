@@ -8,13 +8,4 @@ for num in range (2,2000000):
 
 print(primeSum)
 
-#for i in primes:
-#    print(i)
-
-'''for i in primes:
-    print(i)
-print(len(primes))
-print("^^Your number^^")i
-print(str(count) + "count")
-'''
 

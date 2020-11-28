@@ -10,25 +10,7 @@ nums7 = [7,8,9,0,1,2,3,4,5,6]
 nums8 = [8,9,0,1,2,3,4,5,6,7]
 nums9 = [9,0,1,2,3,4,5,6,7,8]
 ordersList = []
-#for a in nums:
-#    for b in nums1:
-#        for c in nums2:
-#            for d in nums3:
-#                for e in nums4:
-#                    for f in nums5:
-#                        for g in nums6:
-#                            for h in nums7:
-#                                for i in nums8:
-#                                    for j in nums9:
-#                                        print(str(a) + str(b) + str(c) + str(d) + str(e) + str(f) + str(g) + str(h) + str(i) + str(j))
-    
-    
-    
-        
-        
-        
-        
-        
+ 
 for a in nums:
     for b in nums1:
         if len(ordersList) > 1500000:
@@ -86,24 +68,7 @@ for a in nums:
                                         if len(ordersList) > 1500000:
                                             break
                                       
-    #if curNum not in ordersList:
-    #    ordersList.append(curNum)
-    #print(curNum)
-#for a in range(3):
-#    for b in range(3):
-#        for c in range(3):
-#            curNum = ''
-#            if str(a) not in curNum:
-#                curNum += str(a)
-#            if str(b) not in curNum:
-#                curNum += str(b)
-#            if str(c) not in curNum:
-#                curNum += str(c)  
-#            print(curNum)
-#            if len(curNum) == 3 and curNum not in ordersList:
-#                ordersList.append(curNum)                
-#                
-#            
+
 ordersList.sort()
 print(ordersList[0:20])
 print("999999")

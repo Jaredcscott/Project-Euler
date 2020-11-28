@@ -55,17 +55,4 @@ for xI in range(3,len(grid)):
 print("-------------------------------------------------------------------------------------Max Product: " + str(maxProduct))
 
 
-'''
-    curProduct = 1
-    if numX == 17 or numX == 18 or numX == 19:
-        for i in range(16,20):
-            curProduct *= grid[y][i]
-            if curProduct > maxProduct:
-                maxProduct = curProduct
-    else:
-        for i in range(numX,numX + 3):
-            curProduct *= grid[y][i]
-            if curProduct > maxProduct:
-                maxProduct = curProduct
-'''
 
