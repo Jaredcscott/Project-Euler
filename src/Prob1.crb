@@ -1,0 +1,37 @@
+'Date: 9/9/21
+'Program author: Jared Scott
+Public fibNums()
+
+'Main Program
+BeginProg
+  Public result
+  result = 0
+  Dim size 
+  Const maxSize = 100
+  size = fibonacci(maxSize,4000000)
+  'fibonacci()
+  'size = 33
+  Dim i
+  For i = 1 To size 
+    If fibNums(i) MOD 2 = 0 Then result += fibNums(i)
+  Next
+EndProg
+
+Function genFibonacci (maxCount, limit)
+  'Const size = numCount
+  
+  Dim index = 3
+  Dim value1 = 1
+  Dim value2 = 2
+  fibNums(1) = value1
+  fibNums(2) = value2
+  Do
+    'If fibNums(index-1) > 4000000 Then Exit Do
+    If (fibNums(index-1) > limit) OR (index > maxCount) Then
+      Return index
+      Exit Do
+    EndIf
+    fibNums(index) = fibNums(index-1) + fibNums(index-2)
+    index += 1
+  Loop
+EndFunction
