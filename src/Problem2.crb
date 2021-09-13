@@ -1,0 +1,23 @@
+'Date: 9/9/21
+'Program author: Jared Scott
+
+
+Public sumTotal
+Public print As String * 1000
+'Main Program
+BeginProg
+  sumTotal = 0
+  Dim limit, curNum
+  limit = 1000
+  curNum = 1
+  Do
+    If  curNum >= limit Then
+      Exit Do
+    EndIf
+    If (curNum MOD 3 = 0) OR (curNum MOD 5 = 0) Then
+      sumTotal += curNum
+    EndIf
+    curNum += 1
+  Loop
+  print = "Sum Found! Total: " & sumTotal 
+EndProg
