@@ -1,3 +1,8 @@
+'''
+  @Author Jared Scott ☯
+  solves the problem through comination iteration, takes a LOOOOOOOOOOOOOOOONG time
+'''
+
 def digitSum(limit):
   nums = []
   num = 1
@@ -14,5 +19,7 @@ def digitSum(limit):
         break
   return sum(nums)
 
+# Checking that the algorithm is functioning properly with known outputs
 print(digitSum(3))
 print(digitSum(7))
+print(digitSum(2020))
