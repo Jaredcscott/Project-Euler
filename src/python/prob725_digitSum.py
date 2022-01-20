@@ -1,6 +1,6 @@
 '''
   @Author Jared Scott ☯
-  solves the problem through comination iteration, takes a LOOOOOOOOOOOOOOOONG time
+  solves the problem through combination iteration, takes a LOOOOOOOOOOOOOOOONG time (Over 2 days)
 '''
 
 def digitSum(limit):
